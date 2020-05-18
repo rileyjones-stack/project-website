@@ -1,0 +1,202 @@
+<!doctype HTML>
+<html>
+<head>
+<title>Writing Prompts.</title>
+<style>
+/* body styling to set background image, font etc */
+* {
+  box-sizing: border-box;
+  }
+
+a {
+text-decoration: none;
+}
+ 
+/* this creates the size of the button */
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* this causes the fade colour */
+.btn:hover {
+  background-color: #3e8e41;
+  color: white;
+}
+    
+.navbar {
+  overflow: hidden;
+  background-color: #aaa;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+    
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #aaa;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #aaa;
+  color: black;
+}
+
+
+
+body {
+background-image: url("");
+background-color: #f1f1f1;
+font-family: Courier New, Courier, monospace;
+margin: 0;
+}
+
+div {
+color: #696969;
+}
+
+/* try header with and without padding */
+.header {
+padding: 50px;
+text-align: center;
+color: #696969;
+background: #f1f1f1;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+  
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+  
+h4 {
+  font-family: Cambria, Cambria, cursive;
+  }
+  
+
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  }
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+    
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: black;    }
+    49%{    color: black; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: black;    }
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #aaa;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+  
+<div class="header">
+<h1>Writing Prompts.</h1>
+  <hr>
+  <h4>a new wave of creative writing.</h4>
+</div>
+<div class="navbar">
+    <a href='https://www.freecodecamp.org/' class="btn">Hover Over Me</a>
+    <a href='https://www.freecodecamp.org/' class="btn">Survey</a>
+    <a href='https://www.freecodecamp.org/' class="btn">Hover Over Me</a>
+  </div>
+ 
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>Prompt of the Week</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>Quotes from Famous Writers</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2>Prompt of the Day</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+
+    
+<div class="footer">
+  <h2><span class="blinking">Take our survey!</span></h2>
+</div>
+  
+  </body>
+</html>
+
+
