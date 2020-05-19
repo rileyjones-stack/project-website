@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Riley's Home Website</title> 
+<!-- add icon link -->
+        <link rel = "icon" href =  
+"https://i.pinimg.com/originals/6b/a3/be/6ba3bef6700392b3e41792d74cf34dcf.gif" 
+        type = "image/x-icon"> 
+<style>
+    
+    .header {
+        text-align: left;
+        background: #FFA07A;
+        
+        
+    }
+    
+    .navbar {
+        background-color: #FFA07A;
+    }
+    
+    body {
+  font-family: Consolas, Consolas, monospace;
+  margin: 0;
+  background-color: #FF7F50;
+    }
+    
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #FFA07A;
+  padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    }
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #FFA07A;
+  color: black;
+}
+    
+    .form {
+        text-align: center;
+        
+    }
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: black;    }
+    49%{    color: black; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: black;    }
+}
+    
+    .img {
+        text-align: center;
+        
+    }
+
+ div:hover {
+  background-color: #FF7F50;
+}
+
+  
+</style>
+</head>
+
+<body>
+<!-- div id didnt work, but div class made the text and backgeround color change -->
+<!-- div class=header is related to the .header styling -->
+<div class="header">
+    <h1>Welcome.</h1>
+</div>   
+    
+
+    
+        
+
+    
+<div>
+    <a href="https://github.com/kepler-code">Find Code on GitHub</a>
+    </div>
+    
+<div class="side">
+    <h2>Daily Writing Prompts</h2>
+    </div>
+    <br>
+<div class="side"> 
+    <h2>Learn Basic HTML</h2>
+    </div>
+    <br>
+<div class="side">
+    <h2>YouTube</h2>
+    </div>
+    <br>
+<div class="side">
+    <h2>test</h2>
+    </div>
+    <br>
+<div class="side">
+    <h2><a href="https://github.com/kepler-code">Check out my GitHub!</a></h2>
+    </div>
+<br>
+<!-- we created our own class, img, and put .img so the image would center align -->
+
+<div class="img">
+    <img src="https://media.giphy.com/media/mCW8bl1sCwuZy/giphy.gif" alt="autumn leaves">
+    
+    </div>
+<div class="form">
+    <h2>Test my form!</h2>
+    <form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="[name]"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="[name]"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+    
+    
+    </div>
+<br>
+<div class="footer">
+  <h2><span class="blinking">Copyright &copy; 2020 Riley Jones</span></h2>
+</div>
+    
+    
+
+    
+</body>
+</html>
