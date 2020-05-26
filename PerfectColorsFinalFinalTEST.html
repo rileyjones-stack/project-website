@@ -1,0 +1,251 @@
+ <!doctype HTML>
+<html>
+<head>
+<title>Writing Prompts.</title>
+<style>
+/* body styling to set background image, font etc */
+* {
+  box-sizing: border-box;
+  }
+
+/* hyperlink */
+a { 
+text-decoration: none;
+}
+ 
+/* this creates the button and the size of it */
+.btn {
+  background-color: #DC143C;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+}
+    
+ 
+/* this causes the fade colour */
+.btn:hover {
+  background-color: #DC143C;
+  color: white;
+}
+ 
+/*creates navbar*/
+.navbar {
+  overflow: hidden;
+  background-color: #DC143C;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+    
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: #FFE4E1;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link button at top */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #4682B4;
+  color: #FFE4E1;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #000080;
+  color: ;
+}
+
+    p {
+        color: black;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+
+body {
+background-color: #CD5C5C;
+font-family: "Times New Roman", Times, serif;
+margin: 0;
+
+}
+
+div {
+color: #FFE4E1;
+ word-wrap: break-word; 
+
+}
+
+/* try header with and without padding */
+.header {
+padding: 100px;
+text-align: center;
+background-color: #4682B4;
+background-image: url("569aae30a589da9c784edf51d0d9f695.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+    
+    
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+
+  
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  
+  padding: 20px;
+}
+  
+/* Main column */
+.main {
+  flex: 70%;
+  
+  padding: 20px;
+}
+  
+h4 {
+  font-family: "Times New Roman", Times, serif;
+  color: #FFFFFF;
+  }
+  
+
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #DC143C;
+  width: 100%;
+  padding: 20px;
+  color: #FFE4E1;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  border-radius: 25px;
+  }
+    
+.fakeimg2 {
+  background-color: #DC143C;
+  width: 100%;
+  padding: 20px;
+  color: #FFE4E1;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  border-radius: 25px;
+  }
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+    
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #FFE4E1;    }
+    49%{    color: #FFE4E1; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #FFE4E1;    }
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #DC143C;
+  color: #FFE4E1;
+  border-radius: 25px;
+}
+    
+    h1 {
+        color: #FFFFFF;
+    }
+
+</style>
+</head>
+<body>
+  
+<div class="header">
+<div class="fakeimg2">
+
+<h1>The BookRec.</h1>
+    
+  <hr>
+  <h4>find your new favourite book today!</h4>
+</div>
+    </div>
+<div class="navbar">
+    <a href='https://www.freecodecamp.org/' class="btn">Hover Over Me</a>
+    <a href='https://www.freecodecamp.org/' class="btn">Survey</a>
+    <a href='https://www.freecodecamp.org/' class="btn">Hover Over Me</a>
+  </div>
+    
+ 
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <hr>
+    <h2>Book of the Week</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image with desc</div>
+    <h4>Some text about me in culpa qui officia deserunt mollit anim..</h4>
+    <hr>
+    <h3>Quotes from Famous Writers</h3>
+    <h4>Lorem ipsum dolor sit ame.</h4>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+      <h4> lorem ipsum </h4>
+      <hr>
+  </div>
+  <div class="main">
+    <hr>
+    <h2>Daily Recommendations</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">[Book title, then description, then image of cover here]
+        <br>
+      <br>[Book title, then description, then image of cover here]
+        <br>
+        <br>[Book title, then description, then image of cover here]
+      </div>
+    <h4>Some text..</h4>
+    <h4>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</h4>
+    <hr>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <h4>Some text..</h4>
+    <h4>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</h4>
+    <hr>
+  </div>
+</div>
+
+    
+<div class="footer">
+  <h2><span class="blinking">Take our survey!</span></h2>
+</div>
+  
+  </body>
+</html>
+
+
